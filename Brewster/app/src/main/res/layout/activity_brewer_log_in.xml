@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="com.kate.teme.AdminLogIn">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbarAdminLogIn"
+        android:textColor="@color/white_pure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in here"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:textSize="34dp"
+        android:textColor="@color/black"
+        />
+    <EditText
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/entEmail"
+        android:hint="Enter email address"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/entPassword"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginadmin"
+        android:textColor="@color/black"
+
+        android:text="Log in"/>
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtsignup"
+        android:text="Sign up"
+        android:textColor="@color/black"
+        />
+
+
+
+</LinearLayout>

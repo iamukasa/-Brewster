@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbarPublicProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:textColor="@color/white_pure" />
+
+    <ScrollView
+        android:id="@+id/ScrollSettings"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/brewerpublicprofileavatar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:adjustViewBounds="true"
+                        android:background="@color/white_pure"
+                        android:contentDescription="Avatar"
+                        android:maxHeight="100dp"
+                        android:maxWidth="100dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/avatar" />
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/brewerpublicprofileusername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/black"
+
+                            android:text="username" />
+
+                        <EditText
+                            android:id="@+id/brewerpublicprofilename"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="name"
+                            android:textColor="@color/black"
+
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/brewerpublicprofileid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:text="ID" />
+
+                <EditText
+                    android:id="@+id/brewerpublicprofileschool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:text="School" />
+
+
+                <EditText
+                    android:id="@+id/brewerpublicprofilebio"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:text="Bio" />
+
+                <EditText
+                    android:id="@+id/brewerpublicprofileskills"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+
+
+                    android:text="Skills" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

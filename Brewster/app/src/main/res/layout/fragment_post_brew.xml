@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="140dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on the Image below to add an Image"
+        />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_stacked_tab_max_width"
+        android:src="@drawable/index"
+        android:scaleType="fitXY"
+        android:id="@+id/postImage"/>
+    <EditText
+        android:id="@+id/brewTitle"
+        android:hint="Title of your brew"
+        android:layout_width="match_parent"
+        android:inputType="textAutoComplete"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/brewDescription"
+        android:hint="Describe your  your brew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/brewvideo"
+        android:hint="Add link to your pitch or prorotype demo"
+        android:inputType="textWebEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postBrew"
+        android:background="@color/button_material_light"
+        android:text="Post Brew"
+        android:textColor="@color/black"
+        />
+
+
+
+</LinearLayout>
+    </ScrollView>
